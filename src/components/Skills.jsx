@@ -32,11 +32,11 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-24 relative overflow-hidden bg-black/10">
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10 mix-blend-screen"></div>
+    <section id="skills" className="py-24 relative overflow-hidden bg-accent/20">
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10 mix-blend-multiply"></div>
       
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-display font-bold mb-16 text-center">
+        <h2 className="text-3xl md:text-4xl font-display font-bold mb-16 text-center text-dark">
           Skill and <span className="text-gradient">Tools</span>
         </h2>
 
@@ -44,16 +44,16 @@ const Skills = () => {
           {skillCategories.map((category) => (
             <div 
               key={category.id} 
-              className="glass-dark rounded-[2rem] p-8 border border-white/5 hover:border-primary/30 transition-all duration-300 relative group"
+              className="glass rounded-[2rem] p-8 border border-primary/5 hover:border-primary/20 transition-all duration-300 relative group"
             >
-              <div className="absolute -inset-0.5 bg-gradient-to-br from-primary/20 to-transparent rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity blur"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-br from-primary/10 to-transparent rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity blur"></div>
               
               <div className="relative">
-                <div className="flex items-center gap-4 mb-8 pb-6 border-b border-white/10">
+                <div className="flex items-center gap-4 mb-8 pb-6 border-b border-primary/10">
                   <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-xl shadow-lg">
                     {category.id}
                   </div>
-                  <h3 className="text-2xl font-bold text-white tracking-wide">
+                  <h3 className="text-2xl font-bold text-dark tracking-wide">
                     {category.title}
                   </h3>
                 </div>
@@ -62,12 +62,12 @@ const Skills = () => {
                   {category.skills.map((skill, index) => (
                     <div 
                       key={index} 
-                      className="flex flex-col items-center gap-3 p-4 rounded-2xl hover:bg-white/5 transition-colors group/item"
+                      className="flex flex-col items-center gap-3 p-4 rounded-2xl hover:bg-primary/5 transition-colors group/item"
                     >
                       <div className="transform transition-transform duration-300 group-hover/item:scale-110 drop-shadow-xl">
                         {skill.icon}
                       </div>
-                      <span className="text-sm font-medium text-gray-300 group-hover/item:text-white transition-colors">
+                      <span className="text-sm font-semibold text-dark/70 group-hover/item:text-primary transition-colors">
                         {skill.name}
                       </span>
                     </div>

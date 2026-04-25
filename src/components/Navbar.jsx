@@ -21,14 +21,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'glass-dark py-4' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'glass py-4 shadow-md' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#home" className="text-2xl font-display font-bold text-gradient">
           PORTOFOLIO
         </a>
         <div className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="text-light hover:text-primary transition-colors font-medium">
+            <a key={link.name} href={link.href} className="text-dark/80 hover:text-primary transition-colors font-semibold">
               {link.name}
             </a>
           ))}

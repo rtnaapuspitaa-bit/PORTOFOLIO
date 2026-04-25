@@ -43,9 +43,9 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-black/20">
+    <section id="contact" className="py-24 bg-accent/20">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-display font-bold mb-16 text-center">
+        <h2 className="text-3xl md:text-4xl font-display font-bold mb-16 text-center text-dark">
           Contact <span className="text-gradient">Me</span>
         </h2>
         
@@ -56,13 +56,13 @@ const Contact = () => {
               href={contact.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="glass p-8 rounded-3xl flex flex-col items-center text-center group hover:bg-white/5 border border-white/5 hover:border-primary/50 transition-all duration-300"
+              className="glass p-8 rounded-3xl flex flex-col items-center text-center group hover:bg-primary/5 border border-primary/5 hover:border-primary/20 transition-all duration-300 shadow-lg shadow-primary/5"
             >
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-300">
                 {contact.icon}
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">{contact.title}</h3>
-              <p className="text-gray-400 text-sm break-all">{contact.value}</p>
+              <h3 className="text-lg font-bold text-dark mb-2">{contact.title}</h3>
+              <p className="text-dark/60 text-sm break-all font-medium">{contact.value}</p>
             </a>
           ))}
         </div>

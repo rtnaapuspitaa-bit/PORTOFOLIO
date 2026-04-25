@@ -9,16 +9,16 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-dark text-light font-sans antialiased;
+    @apply bg-light text-dark font-sans antialiased;
   }
 }
 
 @layer utilities {
   .glass {
-    @apply bg-white/10 backdrop-blur-md border border-white/20;
+    @apply bg-white/40 backdrop-blur-md border border-white/20 shadow-sm;
   }
   .glass-dark {
-    @apply bg-black/30 backdrop-blur-lg border border-white/10;
+    @apply bg-accent/30 backdrop-blur-lg border border-primary/10;
   }
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;

@@ -7,10 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#6366f1", // Indigo 500
-        secondary: "#ec4899", // Pink 500
-        dark: "#0f172a", // Slate 900
-        light: "#f8fafc", // Slate 50
+        primary: "#7c2d12", // Deep Brown
+        secondary: "#d4a373", // Tan / Cream
+        dark: "#2d241e", // Dark Espresso
+        light: "#fefae0", // Light Cream/White
+        accent: "#faedcd", // Soft Cream
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

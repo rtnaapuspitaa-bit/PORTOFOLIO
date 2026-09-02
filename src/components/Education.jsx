@@ -22,7 +22,7 @@ const Education = () => {
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4 gap-2">
                   <div>
                     <span className="text-xs font-extrabold text-primary uppercase tracking-wider bg-primary/10 px-3.5 py-1 rounded-full inline-block mb-2">
-                      Diploma IV / Sarjana Terapan
+                      Diploma III / Ahli Madya
                     </span>
                     <h3 className="text-2xl md:text-3xl font-bold text-dark group-hover:text-primary transition-colors">
                       Teknik Informatika

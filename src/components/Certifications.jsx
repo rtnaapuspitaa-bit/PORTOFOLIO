@@ -65,15 +65,9 @@ const Certifications = () => {
     <section id="certifications" className="py-24 relative overflow-hidden bg-gradient-to-b from-transparent via-accent/20 to-transparent">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-bold text-xs uppercase tracking-wider mb-4">
-            Sertifikasi Resmi (Total 5 Sertifikat)
-          </div>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-dark mb-4">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-dark">
             Sertifikasi <span className="text-gradient">& Penghargaan</span>
           </h2>
-          <p className="text-dark/70 font-medium text-lg">
-            Seluruh sertifikat resmi dapat dilihat dan dibaca langsung melalui preview gambar & PDF interaktif di bawah ini.
-          </p>
         </div>
 
         {/* Grid 5 Sertifikat Responsif */}

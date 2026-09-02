@@ -12,7 +12,7 @@ const Education = () => {
             <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
               <h3 className="text-2xl font-bold text-dark">Teknik Informatika</h3>
               <span className="text-primary font-bold mt-2 md:mt-0 px-4 py-1 bg-primary/10 rounded-full text-sm">
-                Saat Ini - Semester 4
+                Saat Ini - Semester 5
               </span>
             </div>
             <p className="text-dark/70 font-medium leading-relaxed">

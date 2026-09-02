@@ -9,7 +9,7 @@ const About = () => {
           
           <div className="glass p-8 md:p-12 rounded-3xl space-y-6 text-dark/70 font-medium leading-relaxed shadow-xl border border-primary/5">
             <p>
-              Saya adalah mahasiswa Teknik Informatika semester 4 dengan minat pada pengembangan perangkat lunak dan desain UI/UX. Saya aktif mengembangkan keterampilan melalui berbagai proyek serta memperdalam pemahaman tentang sistem.
+              Saya adalah mahasiswa Teknik Informatika semester 5 dengan minat pada pengembangan perangkat lunak dan desain UI/UX. Saya aktif mengembangkan keterampilan melalui berbagai proyek serta memperdalam pemahaman tentang sistem.
             </p>
             <p>
               Saya juga tertarik pada desain antarmuka dan menggunakan Figma untuk membuat tampilan aplikasi yang intuitif dan mudah digunakan. Bagi saya, desain tidak hanya soal visual, tetapi juga kenyamanan pengguna.

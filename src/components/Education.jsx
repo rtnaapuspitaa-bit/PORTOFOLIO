@@ -4,7 +4,7 @@ const Education = () => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-5xl font-display font-bold text-dark mb-4">
-            Riwayat <span className="text-gradient">Pendidikan</span>
+            Education <span className="text-gradient">Background</span>
           </h2>
           <div className="w-20 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 rounded-full"></div>
         </div>
@@ -22,10 +22,10 @@ const Education = () => {
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4 gap-2">
                   <div>
                     <span className="text-xs font-extrabold text-primary uppercase tracking-wider bg-primary/10 px-3.5 py-1 rounded-full inline-block mb-2">
-                      Diploma III / Ahli Madya
+                      Associate Degree / Diploma III
                     </span>
                     <h3 className="text-2xl md:text-3xl font-bold text-dark group-hover:text-primary transition-colors">
-                      Teknik Informatika
+                      Informatics Engineering
                     </h3>
                     <p className="text-sm font-bold text-dark/70 mt-1">
                       Politeknik Negeri Cilacap
@@ -33,12 +33,12 @@ const Education = () => {
                   </div>
 
                   <span className="text-primary font-extrabold text-xs md:text-sm px-4 py-2 bg-primary/10 rounded-full border border-primary/20 w-fit shadow-sm">
-                    Saat Ini - Semester 5
+                    Present - 5th Semester
                   </span>
                 </div>
 
                 <p className="text-dark/75 font-medium leading-relaxed text-sm md:text-base pt-2 border-t border-primary/10">
-                  Fokus utama pada pengembangan perangkat lunak (Software Engineering), jaringan komputer, serta desain antarmuka pengguna (UI/UX). Aktif dalam pengerjaan proyek sistem berbasis web, basis data, dan prototyping antarmuka dengan Figma.
+                  Main focus on software engineering, computer networks, and user interface (UI/UX) design. Actively engaged in web-based system development, database management, and interactive UI prototyping with Figma.
                 </p>
 
                 <div className="flex flex-wrap gap-2 pt-4">

@@ -7,11 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#7c2d12", // Deep Brown
-        secondary: "#d4a373", // Tan / Cream
-        dark: "#2d241e", // Dark Espresso
-        light: "#fefae0", // Light Cream/White
-        accent: "#faedcd", // Soft Cream
+        primary: "#4f46e5", // Electric Royal Indigo
+        secondary: "#0ea5e9", // Vivid Cyan Blue
+        dark: "#0f172a", // Slate Navy (Jernih & Kontras Tinggi)
+        light: "#f8fafc", // Crisp Slate Light White (Bersih & Terang)
+        accent: "#e0e7ff", // Soft Ice Tint
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

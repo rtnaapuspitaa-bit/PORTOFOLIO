@@ -10,11 +10,6 @@ const Hero = () => {
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
         {/* Left Text Content (Order 1 on both mobile & desktop) */}
         <div className="order-1 flex flex-col justify-center space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/15 text-primary text-xs font-bold uppercase tracking-wider w-fit shadow-sm">
-            <span className="w-2 h-2 rounded-full bg-primary animate-ping"></span>
-            Teknik Informatika • Semester 5
-          </div>
-
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-display font-extrabold leading-tight text-dark">
             Hi, I'm <br/>
             <span className="text-gradient">Ratna Puspita Sari</span>

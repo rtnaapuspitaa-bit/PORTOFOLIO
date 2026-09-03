@@ -8,8 +8,8 @@ const Hero = () => {
       <div className="absolute bottom-10 right-10 w-[30rem] h-[30rem] bg-secondary/25 rounded-full blur-[140px] -z-10 animate-pulse" style={{ animationDuration: '4s' }}></div>
 
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
-        {/* Left Text Content */}
-        <div className="order-2 md:order-1 flex flex-col justify-center space-y-6">
+        {/* Left Text Content (Order 1 on both mobile & desktop) */}
+        <div className="order-1 flex flex-col justify-center space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/15 text-primary text-xs font-bold uppercase tracking-wider w-fit shadow-sm">
             <span className="w-2 h-2 rounded-full bg-primary animate-ping"></span>
             Teknik Informatika • Semester 5
@@ -59,8 +59,8 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Image Container */}
-        <div className="order-1 md:order-2 flex justify-center">
+        {/* Right Image Container (Order 2 on both mobile & desktop) */}
+        <div className="order-2 flex justify-center">
           <div className="relative group">
             {/* Glowing Gradient Backdrop Ring */}
             <div className="absolute -inset-4 bg-gradient-to-tr from-primary via-secondary to-accent rounded-[2.5rem] blur-2xl opacity-40 group-hover:opacity-70 transition-all duration-500"></div>

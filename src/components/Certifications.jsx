@@ -14,7 +14,7 @@ const Certifications = () => {
       fileUrl: "/cisco-it-essentials.jpg",
       badge: "IT Essentials",
       category: "networking",
-      description: "Sertifikasi resmi Cisco Networking Academy yang mencakup pemahaman komprehensif tentang perangkat keras komputer, sistem operasi, jaringan dasar, dan protokol keamanan IT."
+      description: "Official Cisco Networking Academy certification covering comprehensive knowledge of computer hardware, operating systems, networking fundamentals, and IT security protocols."
     },
     {
       id: "mtcna",
@@ -25,40 +25,40 @@ const Certifications = () => {
       fileUrl: "/mtcna.pdf",
       badge: "Networking",
       category: "networking",
-      description: "Sertifikasi resmi MikroTik yang membuktikan keahlian dalam perencanaan, konfigurasi, manajemen, dan troubleshooting jaringan berbasis MikroTik RouterOS."
+      description: "Official MikroTik certification validating expertise in network planning, configuration, management, and RouterOS-based network troubleshooting."
     },
     {
       id: "fundamental",
       type: "pdf",
-      title: "Sertifikat Fundamental",
-      subtitle: "Dasar Development & Teknologi",
-      issuer: "Program Sertifikasi Teknologi",
+      title: "Fundamental Certificate",
+      subtitle: "Core Technology & Development",
+      issuer: "Technology Certification Program",
       fileUrl: "/sertifikat-fundamental.pdf",
       badge: "Fundamental",
       category: "development",
-      description: "Sertifikat kompetensi tingkat dasar yang mengukur pemahaman konsep dasar teknologi, struktur data, dan prinsip pemrograman."
+      description: "Foundational competency certification measuring core understanding of software concepts, data structures, and programming principles."
     },
     {
       id: "intermediate",
       type: "pdf",
-      title: "Sertifikat Intermediate",
-      subtitle: "Pengembangan Tingkat Lanjut",
-      issuer: "Program Sertifikasi Teknologi",
+      title: "Intermediate Certificate",
+      subtitle: "Advanced Software Development",
+      issuer: "Technology Certification Program",
       fileUrl: "/sertifikat-intermediate.pdf",
       badge: "Intermediate",
       category: "development",
-      description: "Sertifikat kompetensi tingkat menengah untuk kemampuan implementasi proyek, arsitektur sistem, dan logika tingkat lanjut."
+      description: "Intermediate competency certification focusing on practical project implementation, system architecture, and advanced application logic."
     },
     {
       id: "pengantar",
       type: "pdf",
-      title: "Sertifikat Pengantar",
-      subtitle: "Pengenalan Bidang & Konsep Dasar",
-      issuer: "Program Sertifikasi Teknologi",
+      title: "Introductory Certificate",
+      subtitle: "Tech Foundations & Principles",
+      issuer: "Technology Certification Program",
       fileUrl: "/sertifikat-pengantar.pdf",
       badge: "Introductory",
       category: "development",
-      description: "Sertifikat pengenalan bidang yang mencakup fondasi dasar pengetahuan teoritis dan praktis pada teknologi terkait."
+      description: "Introductory certification covering essential theoretical foundations and hands-on practical principles in relevant software technologies."
     }
   ];
 
@@ -79,7 +79,7 @@ const Certifications = () => {
             Certifications <span className="text-gradient">& Awards</span>
           </h2>
           <p className="text-dark/70 text-sm md:text-base font-medium">
-            Bukti kompetensi resmi dan sertifikasi profesional yang telah diraih
+            Official credentials, professional certifications, and technical accomplishments
           </p>
           <div className="w-20 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 rounded-full"></div>
         </div>

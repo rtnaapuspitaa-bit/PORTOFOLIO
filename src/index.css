@@ -24,3 +24,50 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-indigo-600 to-secondary;
   }
 }
+
+@keyframes contactFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-reveal {
+  animation: contactFadeUp 700ms ease-out both;
+}
+
+.contact-form-reveal {
+  animation: contactFadeUp 700ms 140ms ease-out both;
+}
+
+.footer-social-link {
+  animation: contactFadeUp 500ms ease-out both;
+}
+
+.footer-social-link:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.footer-social-link:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.footer-social-link:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.footer-social-link:nth-child(5) {
+  animation-delay: 320ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-reveal,
+  .contact-form-reveal,
+  .footer-social-link {
+    animation: none;
+  }
+}

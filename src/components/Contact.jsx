@@ -65,7 +65,7 @@ const Contact = () => {
 
       <div className="container mx-auto px-6 max-w-4xl">
         {/* Header Text */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-10 contact-reveal">
           <h2 className="text-3xl md:text-5xl font-display font-bold text-dark mb-3">
             Contact <span className="text-gradient">Me</span>
           </h2>
@@ -76,7 +76,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Form Container (Seperti Gambar 1) */}
-        <div className="bg-[#18181a] p-7 md:p-8 rounded-xl shadow-2xl border border-white/15 text-white max-w-[558px] mx-auto">
+        <div className="bg-[#18181a] p-7 md:p-8 rounded-xl shadow-2xl border border-white/15 text-white max-w-[558px] mx-auto contact-form-reveal">
           {statusMessage && (
             <div className={`p-4 mb-6 rounded-2xl text-xs md:text-sm font-semibold border ${
               statusMessage.type === 'success' 

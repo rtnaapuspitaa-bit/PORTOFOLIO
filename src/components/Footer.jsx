@@ -42,7 +42,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               title={item.name}
-              className="w-12 h-12 rounded-2xl bg-dark text-white hover:bg-primary flex items-center justify-center transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 group"
+              className="footer-social-link w-12 h-12 rounded-2xl bg-dark text-white hover:bg-primary flex items-center justify-center transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 group"
             >
               <div className="group-hover:scale-110 transition-transform">{item.icon}</div>
             </a>

@@ -40,6 +40,15 @@ const Projects = () => {
       tags: ['Web Dev', 'Pustaka', 'Frontend'],
       github: 'https://github.com/rtnaapuspitaa-bit/PUSTAKA',
       icon: '📚'
+    },
+    {
+      title: 'SIBEA Mobile',
+      category: 'Mobile Development & UI/UX',
+      description: 'Perancangan dan pengembangan aplikasi mobile SIBEA dengan fokus pada pengalaman pengguna yang intuitif dan responsif.',
+      tags: ['Mobile', 'Figma', 'UI/UX'],
+      github: 'https://github.com/rtnaapuspitaa-bit/SIBEA-MOBILE',
+      figma: 'https://www.figma.com/design/UHEkau4wYTiM2eQPh3ljmY/DIP?node-id=20-4&p=f',
+      icon: '📱'
     }
   ];
 

@@ -39,7 +39,7 @@ const About = () => {
           {/* Main Description Card */}
           <div className="glass p-8 md:p-12 rounded-[2.5rem] space-y-6 text-dark/75 font-medium leading-relaxed shadow-2xl border-l-4 border-l-primary border-t border-r border-b border-primary/10 mb-12 hover:shadow-primary/10 transition-all duration-300">
             <p className="text-base md:text-lg">
-              I am a 5th-semester Informatics Engineering student with a strong interest in software development and UI/UX design. I actively enhance my skills through various projects and continuously deepen my understanding of computer systems.
+              I am a 5th semester Informatics Engineering student with a strong interest in software development and UI/UX design. I actively enhance my skills through various projects and continuously deepen my understanding of computer systems.
             </p>
             <p className="text-base md:text-lg">
               I am passionate about interface design and leverage Figma to craft intuitive, user-friendly application interfaces. For me, design is not just about visuals, but also about delivering a seamless user experience.

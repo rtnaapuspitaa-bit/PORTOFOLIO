@@ -50,7 +50,8 @@ const Skills = () => {
           {skillCategories.map((category) => (
             <div 
               key={category.id} 
-              className="glass rounded-[2.5rem] p-8 border border-primary/10 hover:border-primary/30 transition-all duration-300 relative group hover:-translate-y-2 shadow-xl shadow-primary/5 hover:shadow-2xl hover:shadow-primary/15 flex flex-col justify-between"
+              style={{ '--card-delay': `${category.id * 100}ms` }}
+              className="glass card-reveal rounded-[2.5rem] p-8 border border-primary/10 hover:border-primary/30 transition-all duration-300 relative group hover:-translate-y-2 shadow-xl shadow-primary/5 hover:shadow-2xl hover:shadow-primary/15 flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between gap-4 mb-8 pb-6 border-b border-primary/10">

@@ -60,7 +60,8 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div 
               key={index} 
-              className="glass rounded-[2rem] p-8 border border-primary/10 hover:border-primary/30 transition-all duration-300 group hover:-translate-y-2 relative overflow-hidden flex flex-col justify-between shadow-xl shadow-primary/5 hover:shadow-2xl hover:shadow-primary/15"
+              style={{ '--card-delay': `${index * 100}ms` }}
+              className="glass card-reveal rounded-[2rem] p-8 border border-primary/10 hover:border-primary/30 transition-all duration-300 group hover:-translate-y-2 relative overflow-hidden flex flex-col justify-between shadow-xl shadow-primary/5 hover:shadow-2xl hover:shadow-primary/15"
             >
               <div>
                 <div className="flex items-center justify-between gap-3 mb-6">

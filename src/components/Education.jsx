@@ -18,7 +18,7 @@ const Education = () => {
                 <span className="w-full h-full rounded-full bg-primary/50 animate-ping absolute top-0 left-0"></span>
               </div>
 
-              <div className="glass p-8 rounded-[2rem] border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-xl shadow-primary/5 hover:shadow-2xl hover:shadow-primary/10">
+              <div className="glass card-reveal p-8 rounded-[2rem] border border-primary/10 hover:border-primary/30 transition-all duration-300 shadow-xl shadow-primary/5 hover:shadow-2xl hover:shadow-primary/10">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4 gap-2">
                   <div>
                     <span className="text-xs font-extrabold text-primary uppercase tracking-wider bg-primary/10 px-3.5 py-1 rounded-full inline-block mb-2">

@@ -1,5 +1,19 @@
+import { useState } from 'react';
+
 const Projects = () => {
+  const [activeFilter, setActiveFilter] = useState('All');
+
   const projects = [
+    {
+      title: 'Syncra',
+      category: 'UI/UX Design & Web Development',
+      description: 'Konsep sistem informasi jadwal kuliah pengganti yang membantu mahasiswa dan dosen mengatur perubahan jadwal secara lebih terarah, jelas, dan mudah dipantau.',
+      tags: ['React', 'Figma', 'System Design'],
+      github: 'https://github.com/rtnaapuspitaa-bit/Sistem-Informasi-Jadwal-Pengganti',
+      figma: 'https://www.figma.com/design/AHrs9kCw3H8Id5kBtTU4Yd/Syncra?node-id=0-1&t=8GH18g1KQQBHhSOY-1',
+      icon: '✦',
+      featured: true
+    },
     {
       title: 'Beasiswa',
       category: 'Web Development & UI/UX',
@@ -52,37 +66,59 @@ const Projects = () => {
     }
   ];
 
+  const filters = ['All', 'UI/UX Design', 'Web Development', 'Mobile Development', 'Programming Basics'];
+  const filteredProjects = activeFilter === 'All'
+    ? projects
+    : projects.filter((project) => project.category.includes(activeFilter));
+
   return (
     <section id="projects" className="py-24 relative bg-light overflow-hidden">
       {/* Glow Orbs */}
       <div className="absolute top-1/3 right-0 w-80 h-80 bg-secondary/20 rounded-full blur-[120px] -z-10"></div>
       
       <div className="container mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10">
+          <p className="text-xs font-extrabold uppercase tracking-[0.3em] text-primary mb-4">Selected work / 2024—2026</p>
           <h2 className="text-3xl md:text-5xl font-display font-bold text-dark mb-4">
             Featured <span className="text-gradient">Projects</span>
           </h2>
+          <p className="text-dark/65 font-medium max-w-xl mx-auto">Kumpulan eksperimen, sistem, dan interface yang membentuk cara saya belajar membuat produk digital.</p>
           <div className="w-20 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-2 mb-12" role="group" aria-label="Filter project berdasarkan fokus">
+          {filters.map((filter) => (
+            <button
+              key={filter}
+              type="button"
+              onClick={() => setActiveFilter(filter)}
+              aria-pressed={activeFilter === filter}
+              className={`px-4 py-2 rounded-full text-xs font-bold transition-all duration-300 border ${activeFilter === filter ? 'bg-dark text-white border-dark shadow-lg shadow-dark/15 -translate-y-0.5' : 'bg-white/70 text-dark/60 border-primary/10 hover:border-primary/30 hover:text-primary'}`}
+            >
+              {filter}
+            </button>
+          ))}
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {projects.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <div 
-              key={index} 
+              key={project.title} 
               style={{ '--card-delay': `${index * 100}ms` }}
-              className="glass card-reveal rounded-[2rem] p-8 border border-primary/10 hover:border-primary/30 transition-all duration-300 group hover:-translate-y-2 relative overflow-hidden flex flex-col justify-between shadow-xl shadow-primary/5 hover:shadow-2xl hover:shadow-primary/15"
+              className={`glass card-reveal rounded-[2rem] p-8 border transition-all duration-300 group hover:-translate-y-2 relative overflow-hidden flex flex-col justify-between shadow-xl hover:shadow-2xl ${project.featured ? 'project-featured border-secondary/40 shadow-secondary/10 lg:col-span-2 bg-gradient-to-br from-white via-white to-secondary/10' : 'border-primary/10 shadow-primary/5 hover:border-primary/30 hover:shadow-primary/15'}`}
             >
+              {project.featured && <div className="absolute top-0 right-0 px-4 py-2 rounded-bl-2xl bg-dark text-white text-[10px] font-extrabold uppercase tracking-[0.2em]">New / Featured</div>}
               <div>
                 <div className="flex items-center justify-between gap-3 mb-6">
                   <span className="text-xs font-extrabold text-primary bg-primary/10 px-3.5 py-1.5 rounded-full uppercase tracking-wider">
                     {project.category}
                   </span>
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl shadow-sm">
+                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl shadow-sm ${project.featured ? 'bg-secondary text-white project-icon-pulse' : 'bg-primary/10'}`}>
                     {project.icon}
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-bold mb-3 text-dark group-hover:text-primary transition-colors leading-tight">
+                <h3 className="text-2xl md:text-3xl font-bold mb-3 text-dark group-hover:text-primary transition-colors leading-tight">
                   {project.title}
                 </h3>
                 
@@ -128,6 +164,7 @@ const Projects = () => {
             </div>
           ))}
         </div>
+        <p className="text-center text-xs text-dark/45 font-semibold mt-8">Menampilkan {filteredProjects.length} dari {projects.length} project</p>
       </div>
     </section>
   );

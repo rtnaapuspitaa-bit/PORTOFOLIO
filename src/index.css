@@ -51,6 +51,25 @@
   animation: cardReveal 700ms var(--card-delay, 0ms) cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
+.interactive-card {
+  isolation: isolate;
+}
+
+.interactive-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 25%, rgba(255, 255, 255, 0.7) 48%, transparent 70%);
+  transform: translateX(-125%);
+  transition: transform 800ms ease;
+}
+
+.interactive-card:hover::after {
+  transform: translateX(125%);
+}
+
 @keyframes projectIconPulse {
   0%, 100% {
     transform: rotate(0deg) scale(1);
@@ -58,20 +77,6 @@
   50% {
     transform: rotate(8deg) scale(1.08);
   }
-}
-
-.project-featured::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(115deg, transparent 20%, rgba(255, 255, 255, 0.7) 45%, transparent 70%);
-  transform: translateX(-120%);
-  transition: transform 700ms ease;
-}
-
-.project-featured:hover::after {
-  transform: translateX(120%);
 }
 
 .project-icon-pulse {
@@ -116,5 +121,9 @@
 
   .project-icon-pulse {
     animation: none;
+  }
+
+  .interactive-card::after {
+    display: none;
   }
 }

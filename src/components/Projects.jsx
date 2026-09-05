@@ -32,14 +32,6 @@ const Projects = () => {
       icon: '📦'
     },
     {
-      title: 'Sistem Manajemen Jadwal Kuliah Pengganti',
-      category: 'UI/UX Design',
-      description: 'Merancang tampilan antarmuka (UI/UX) aplikasi menggunakan Figma. Fokus pada penciptaan desain yang user-friendly dan nyaman digunakan.',
-      tags: ['Figma', 'UI/UX', 'Prototyping'],
-      figma: 'https://www.figma.com/design/AHrs9kCw3H8Id5kBtTU4Yd/Untitled?node-id=0-1&t=LlK81p8rUoYBgIgV-1',
-      icon: '📅'
-    },
-    {
       title: 'Kalkulator & Konversi Suhu',
       category: 'Programming Basics',
       description: 'Pembuatan sistem kalkulator dan konversi suhu sebagai latihan dasar logika pemrograman dan algoritma.',
@@ -105,7 +97,7 @@ const Projects = () => {
             <div 
               key={project.title} 
               style={{ '--card-delay': `${index * 100}ms` }}
-              className={`glass card-reveal rounded-[2rem] p-8 border transition-all duration-300 group hover:-translate-y-2 relative overflow-hidden flex flex-col justify-between shadow-xl hover:shadow-2xl ${project.featured ? 'project-featured border-secondary/40 shadow-secondary/10 lg:col-span-2 bg-gradient-to-br from-white via-white to-secondary/10' : 'border-primary/10 shadow-primary/5 hover:border-primary/30 hover:shadow-primary/15'}`}
+              className={`glass card-reveal interactive-card rounded-[2rem] p-8 border transition-all duration-300 group hover:-translate-y-2 relative overflow-hidden flex flex-col justify-between shadow-xl hover:shadow-2xl ${project.featured ? 'project-featured border-secondary/40 shadow-secondary/10 bg-gradient-to-br from-white via-white to-secondary/10' : 'border-primary/10 shadow-primary/5 hover:border-primary/30 hover:shadow-primary/15'}`}
             >
               {project.featured && <div className="absolute top-0 right-0 px-4 py-2 rounded-bl-2xl bg-dark text-white text-[10px] font-extrabold uppercase tracking-[0.2em]">New / Featured</div>}
               <div>

@@ -37,7 +37,7 @@ const About = () => {
           </div>
           
           {/* Main Description Card */}
-          <div className="glass card-reveal p-8 md:p-12 rounded-[2.5rem] space-y-6 text-dark/75 font-medium leading-relaxed shadow-2xl border-l-4 border-l-primary border-t border-r border-b border-primary/10 mb-12 hover:shadow-primary/10 transition-all duration-300">
+          <div className="glass card-reveal interactive-card p-8 md:p-12 rounded-[2.5rem] space-y-6 text-dark/75 font-medium leading-relaxed shadow-2xl border-l-4 border-l-primary border-t border-r border-b border-primary/10 mb-12 hover:-translate-y-1 hover:shadow-primary/10 transition-all duration-300">
             <p className="text-base md:text-lg">
               I am a 5th semester Informatics Engineering student with a strong interest in software development and UI/UX design. I actively enhance my skills through various projects and continuously deepen my understanding of computer systems.
             </p>
@@ -55,7 +55,7 @@ const About = () => {
               <div 
                 key={index} 
                 style={{ '--card-delay': `${index * 100}ms` }}
-                className="glass card-reveal p-6 rounded-2xl border border-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-primary/5 flex flex-col justify-between group"
+                className="glass card-reveal interactive-card p-6 rounded-2xl border border-primary/10 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-primary/5 flex flex-col justify-between group"
               >
                 <div>
                   <div className="w-12 h-12 rounded-xl bg-primary/10 group-hover:bg-primary group-hover:text-white transition-colors duration-300 flex items-center justify-center text-2xl mb-4 shadow-sm">

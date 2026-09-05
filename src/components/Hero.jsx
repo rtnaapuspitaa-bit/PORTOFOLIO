@@ -21,15 +21,15 @@ const Hero = () => {
 
           {/* Quick Stats / Highlights */}
           <div className="grid grid-cols-3 gap-3 py-2 max-w-lg">
-            <div className="glass p-3 rounded-2xl border border-primary/10 text-center">
+            <div className="glass interactive-card card-reveal p-3 rounded-2xl border border-primary/10 text-center" style={{ '--card-delay': '100ms' }}>
               <span className="text-xl md:text-2xl font-bold text-primary block">Sem 5</span>
               <span className="text-[11px] font-semibold text-dark/60">Informatika</span>
             </div>
-            <div className="glass p-3 rounded-2xl border border-primary/10 text-center">
+            <div className="glass interactive-card card-reveal p-3 rounded-2xl border border-primary/10 text-center" style={{ '--card-delay': '180ms' }}>
               <span className="text-xl md:text-2xl font-bold text-primary block">5+</span>
               <span className="text-[11px] font-semibold text-dark/60">Projects</span>
             </div>
-            <div className="glass p-3 rounded-2xl border border-primary/10 text-center">
+            <div className="glass interactive-card card-reveal p-3 rounded-2xl border border-primary/10 text-center" style={{ '--card-delay': '260ms' }}>
               <span className="text-xl md:text-2xl font-bold text-primary block">5</span>
               <span className="text-[11px] font-semibold text-dark/60">Certifications</span>
             </div>
